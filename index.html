@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -28,6 +28,14 @@ section:nth-child(even){background:#f5f8fc}
 .tarif h3{color:#1a3e6f;font-size:1.5em}
 .tarif .prix{font-size:2.5em;color:#2d6a9f;font-weight:700;margin:10px 0}
 .tarif .detail{color:#666;font-size:.9em}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+th{background:#1a3e6f;color:#fff;padding:14px 12px;text-align:left;font-size:15px}
+td{padding:12px;border-bottom:1px solid #e0e7ef}
+tr:last-child td{border-bottom:none}
+tr:hover{background:#f5f8fc}
+.tables-container{display:flex;gap:30px;flex-wrap:wrap}
+.tables-container .table-wrapper{flex:1;min-width:300px}
+.table-wrapper h3{color:#1a3e6f;margin-bottom:15px;font-size:1.2em;text-align:center}
 .contact-card{background:#fff;padding:25px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
 .contact-card p{margin:10px 0}
 .contact-card i{display:inline-block;width:24px;text-align:center;margin-right:8px;font-weight:700;color:#2d6a9f}
@@ -48,6 +56,7 @@ footer p{margin:5px 0;font-size:14px;opacity:.9}
 <nav>
 <a href="#general">G&eacute;n&eacute;ral</a>
 <a href="#localisation">Localisation</a>
+<a href="#agences">Nos agences au Maroc</a>
 <a href="#tarifs">Tarifs</a>
 <a href="#conditions">Conditions</a>
 <a href="#contacts">Contacts</a>
@@ -96,10 +105,71 @@ Distributeur partenaire sur place pour la remise des colis dans les principales 
 </div>
 </section>
 
+<!-- AGENCES MAROC -->
+<section id="agences">
+<h2>Nos Agences au Maroc</h2>
+<div class="tables-container">
+
+<div class="table-wrapper">
+<h3>R&eacute;seau Asmatour</h3>
+<div style="overflow-x:auto">
+<table>
+<tr><th>Agence</th><th>Adresse</th><th>T&eacute;l&eacute;phone</th></tr>
+<tr><td><strong>Casablanca</strong></td><td>1687, Bd Med VI Jamila 3 Cit&eacute; Djemaa</td><td>0666498747 / 0522379898</td></tr>
+<tr><td><strong>Rabat</strong></td><td>423, Bd Hassan II Dior Jamaa</td><td>0661265233 / 0537660300</td></tr>
+<tr><td><strong>Khmissat</strong></td><td>Av Ibn Sina Khmessset Dabbouze N&deg;4</td><td>0662154999 / 0537553296</td></tr>
+<tr><td><strong>Sidi Slimane</strong></td><td>Lotissement Tazi, Immeuble 30 N&deg;2</td><td>0679075425 / 0679621054</td></tr>
+<tr><td><strong>F&egrave;s</strong></td><td>65, Av Mly Rchid Cote Mamounia</td><td>0666498764 / 0535659946</td></tr>
+<tr><td><strong>Eljadida</strong></td><td>N&deg;7, Angle Bouchaib Errachad &amp; Bd Annakhil</td><td>0667413963 / 0523802193</td></tr>
+<tr><td><strong>Tineghir</strong></td><td>N&deg;115, Bd Med V</td><td>637 52 63 17</td></tr>
+<tr><td><strong>Safi</strong></td><td>Bd Ben Nacer Souk El Baladi face H&ocirc;pital Okba</td><td>0661533621 / 0601407221</td></tr>
+<tr><td><strong>Berrchid</strong></td><td>R&eacute;s ARD Souk Angle Route de Khouribga P11 et Bd de la R&eacute;sistance</td><td>522 53 42 48</td></tr>
+<tr><td><strong>Settat</strong></td><td>10, Bd Med V, Gare Routi&egrave;re</td><td>0652659905 / 0523403485</td></tr>
+<tr><td><strong>Fquih Bensaleh</strong></td><td>317, Bd Hassan II</td><td>0666719310 / 0523439408</td></tr>
+<tr><td><strong>Beni Mellal</strong></td><td>Rue 4 N&deg;4 Quartier Al Adarissa</td><td>0666492726 / 0523486404</td></tr>
+<tr><td><strong>Mohamadia</strong></td><td>R&eacute;s Med Amine N&deg;6, Rachidia II Bd de la R&eacute;sistance</td><td>0655379181 / 0523270802</td></tr>
+<tr><td><strong>Kenitra</strong></td><td>338, Bd Med V Bab Fes</td><td>0601491144 / 0666735638</td></tr>
+<tr><td><strong>Khouribga</strong></td><td>338, Bd Med VI I'II Kamissy</td><td>0671334793 / 0523565450</td></tr>
+<tr><td><strong>Mekn&egrave;s</strong></td><td>Kasbat Chorafa N&deg;39 Bd Nassr</td><td>0662062205 / 0535454368</td></tr>
+<tr><td><strong>Marrakech</strong></td><td>N&deg;27 R&eacute;s Ibn Toumart, Route Essaouira</td><td>0661207265 / 0524494912</td></tr>
+<tr><td><strong>Errachidia</strong></td><td>N&deg;5, Bd Mly Abdellah Ben Ali</td><td>0670362587 / 0535570438</td></tr>
+</table>
+</div>
+</div>
+
+<div class="table-wrapper">
+<h3>R&eacute;seau Moulouya</h3>
+<div style="overflow-x:auto">
+<table>
+<tr><th>Agence</th><th>Adresse</th><th>T&eacute;l&eacute;phone</th></tr>
+<tr><td><strong>Ahfir</strong></td><td>1, Bd Saidia Kissariat Imm Malek</td><td>0699118231 / 0536627725</td></tr>
+<tr><td><strong>Al Hoceima</strong></td><td>Agence Chafarinas Tours, 109 Bd Med V</td><td>0539841323 / 0539841325</td></tr>
+<tr><td><strong>Aroui</strong></td><td>Agence Bouylaghmane 350, Bd Hassan II</td><td>0536362658 / 0536362331</td></tr>
+<tr><td><strong>Berkane</strong></td><td>Angle Bd Saidia et rue Smara</td><td>0618691218 / 0536612131</td></tr>
+<tr><td><strong>Bni Bouayach</strong></td><td>Medadil Trans 30 rue de la Marche Verte N&deg;2</td><td>696 63 76 47</td></tr>
+<tr><td><strong>Driouch</strong></td><td>Agence Cologne Vges 350, Bd Hassan II</td><td>0536367393 / 0536366307</td></tr>
+<tr><td><strong>F&egrave;s</strong></td><td>56, Bd El Mamounia</td><td>0664002597 / 0535733459</td></tr>
+<tr><td><strong>Guercif</strong></td><td>215, Bd Med V</td><td>0674731059 / 0535203163</td></tr>
+<tr><td><strong>Mekn&egrave;s</strong></td><td>1, Imm Abraj Madina, Av des FAR</td><td>0666372119 / 0535523054</td></tr>
+<tr><td><strong>Midar</strong></td><td>Av Hassan II (pr&egrave;s Tribunal et Axa Assurance)</td><td>0623162239 / 0536365039</td></tr>
+<tr><td><strong>Nador</strong></td><td>49/51 Bd Sakia Al Hamra</td><td>0536337233 / 0536334262</td></tr>
+<tr><td><strong>Oujda</strong></td><td>Angle Bd Derfoufi et Av des FAR</td><td>&agrave; pr&eacute;ciser</td></tr>
+<tr><td><strong>Taourirt</strong></td><td>513 rue Berchid Hay Essalam</td><td>536 69 46 12</td></tr>
+<tr><td><strong>Taza</strong></td><td>AV Allal Ben Abdellah Imm Halouat</td><td>0535672691 / 0535282818</td></tr>
+<tr><td><strong>Zaio</strong></td><td>35/36 Bd Ennaer</td><td>536 33 87 95</td></tr>
+</table>
+</div>
+</div>
+
+</div>
+<p style="text-align:center;margin-top:15px;font-size:.9em;color:#666">Contactez l'agence la plus proche de votre destinataire pour le retrait de votre colis.</p>
+</section>
+
 <!-- TARIFS -->
 <section id="tarifs">
 <h2>Nos Tarifs</h2>
 <p style="text-align:center;margin-bottom:25px;color:#666">Tarifs indicatifs &mdash; Contactez-nous pour un devis personnalis&eacute;</p>
+<img src="NOM_DE_TON_IMAGE.jpg" alt="ASMATOUR - Informations et tarifs" style="max-width:100%;display:block;margin:0 auto 30px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1)">
 <div class="grid">
 <div class="tarif">
 <h3>Colis Standard</h3>
